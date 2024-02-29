@@ -1,0 +1,173 @@
+.sect-contact {
+    width: 100%;
+    height: 100%; 
+
+    background-color: #00000070;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.contact {
+    width: 550px;
+    height: 80vh;
+
+    row-gap: 35px;
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+    
+    background-color: #222222;
+    transform: translate(-50%, 0);
+    
+    border-radius: 10px;
+    padding: 50px 70px;
+
+    position: fixed;
+    left: 50%;
+    top: 10vh;    
+}
+
+.contact h3 {
+    font-size: 32px;
+    text-align: center;
+    padding: 20px 0 25px;    
+}
+
+.contact .fa-xmark {
+    opacity: .6;
+    cursor: pointer;
+    
+    transition: .3s;
+    font-size: 1.3rem;
+
+    position: absolute;
+    left: 25px;
+    top: 25px;
+}
+
+.contact .fa-xmark:hover {
+    opacity: 1;
+}
+
+.contact input {
+    width: 100%;
+    height: 40px;
+    font-size: 1rem;
+
+    border-radius: 18px;
+    background-color: #1d1d1d;
+    padding: 0 20px;
+}
+
+.contact textarea {
+    width: 100%;
+    height: 200px;
+
+    border-radius: 18px;
+    background-color: #1d1d1d;
+    padding: 9px 20px;
+    font-size: 1rem;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    outline: #ffffffd0 2px solid;
+}
+
+.contact .msgOnSubmit {
+    font-size: 1rem;
+    text-align: center;
+
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+}
+
+.contact button {
+    width: 120px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+    font-size: 1.1rem;
+    
+    background-color: #1d1d1d;
+    border-radius: 10px;
+    color: white;
+    
+    margin: 0 auto;    
+    cursor: pointer;
+}
+
+.contact button:hover {
+    outline: solid 1px #ffffff;
+}
+
+.contact button img {
+    width: 100%;
+    height: 40px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 980px) { 
+    .contact {
+        width: 65%;  
+        height: 80%;
+        max-height: 650px;
+
+        row-gap: 40px;
+        
+        background-color: #222222;
+        transform: translate(-50%, 0);
+        
+        border-radius: 10px;
+        padding: 10px 75px;
+    
+        position: fixed;
+        left: 50%;
+        top: 12%;    
+    }
+
+    .contact h3 {
+        font-size: 28px;
+        padding: 30px 0 25px;    
+    }
+
+    .contact .msgOnSubmit {
+        transform: translateX(-50%);
+        position: absolute;
+        bottom: 35px;
+        left: 50%;
+    }
+}
+
+@media screen and (max-width: 650px) { 
+    .contact {
+        width: 85%;  
+        height: 80%;
+        max-height: 550px;
+
+        row-gap: 15px;
+        
+        background-color: #222222;
+        transform: translate(-50%, 0);
+        
+        border-radius: 10px;
+        padding: 10px 20px;
+    
+        position: fixed;
+        left: 50%;
+        top: 10%;    
+    }
+
+    .contact .msgOnSubmit {
+        font-size: .9rem;
+        top: 77px;
+    }
+}

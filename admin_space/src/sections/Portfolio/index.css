@@ -1,0 +1,139 @@
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 120px;
+    color: white;
+}
+
+.portfolio .createOrUpdate-portfolio {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+}
+
+.portfolio .deleteProject-portfolio {
+    width: 45%;
+}
+
+.portfolio .identification {
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.portfolio h2 {
+    width: 100%;
+    font-size: 35px;    
+    font-weight: 400;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.portfolio select,
+.portfolio .input-name {
+    width: calc(50% - 20px);
+}
+
+.portfolio option {
+    background-color: #4c4c4c;
+}
+
+.portfolio textarea {
+    width: 100%;
+    height: 120px;
+}
+
+.portfolio .container-inpLanguages {
+    width: 100%;
+    display: flex;
+    row-gap: 12px;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+
+.portfolio .inp_language {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio label {
+    font-family: 'Dosis', sans-serif;
+}
+
+.portfolio input[type=checkbox] {
+    height: 15px;
+    margin: 2px 0 0 10px;
+}
+
+.portfolio .input_img {
+    height: 200px;
+    position: relative;
+    
+    background-color: #ffffff18;
+    border: solid 1px #ffffff50;
+    border-radius: 6px;
+}
+
+.portfolio .input_img:hover {
+    opacity: .9;
+}
+
+.portfolio .input_img:hover i,
+.portfolio .input_img:hover img {
+    opacity: .8;
+}
+
+.portfolio .input_img i {
+    font-size: 5rem;
+
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.portfolio .input_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;  
+}
+
+.portfolio .input_img input {
+    width: 100%;
+    height: 100%;
+    display: flex;  
+    cursor: pointer;
+    opacity: 0;  
+}
+
+.portfolio .input-link {
+    margin-top: 20px;
+}
+
+.portfolio .input-link::placeholder {
+    text-align: center;
+}
+
+.create-newProject,
+.update-Project {
+    font-size: 22px;
+    border: solid 2px #ffffffc0;
+    border-radius: 10px;
+    padding: 8px 22px;
+    margin: 30px auto;
+}
+
+.create-newProject:hover,
+.update-Project:hover {
+    color: #ffffffc0;
+    border: solid 2px #ffffff50;
+}

@@ -1,0 +1,241 @@
+.sect-modal {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000070;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.modal {
+    row-gap: 30px;
+    max-width: 1000px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #222222;
+    border-radius: 10px;
+    
+    padding: 50px 50px 35px;
+    position: relative;
+}
+
+.modal .fa-xmark {
+    transition: all .2s;
+    font-size: 1.1rem;
+
+    cursor: pointer;
+    opacity: .7;
+
+    position: absolute;
+    right: 25px;
+    top: 20px;
+}
+
+.modal .fa-xmark:hover {
+    opacity: 1;
+}
+
+.modal .container {
+    display: flex;
+    column-gap: 50px;
+    align-items: center;
+}
+
+.modal .container-img {
+    width: 275px;
+    height: 275px;
+
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.modal .container-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modal .container-descrip {
+    row-gap: 30px;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 300px);
+}
+
+.modal .container-descrip h4 {
+    font-size: 24px;
+}
+
+.modal .container-descrip p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+
+    letter-spacing: 2px;
+    line-height: 1.5rem;
+}
+
+.container-language-link {
+    display: flex;
+    column-gap: 50px;
+}
+
+.container-language {
+    width: 275px;
+    display: flex;
+    column-gap: 8px;
+}
+
+.container-language i {
+    color: #ffffff90;
+}
+
+.container-language i,
+.container-language img {
+    height: 25px;
+    font-size: 27px;
+}
+
+.container-link {    
+    display: flex;
+    column-gap: 35px;
+
+    justify-content: flex-end;
+    width: calc(100% - 300px);
+}
+
+.container-link a {
+    height: 39px;
+    white-space: nowrap;
+
+    display: flex;
+    column-gap: 13px;
+    
+    align-items: center;
+    justify-content: center;
+    
+    background-color: #1d1d1d;
+    border-radius: 10px;
+    padding: 0 20px;    
+}
+
+.container-link i {
+    font-size: 1.05rem;
+}
+
+.container-link a:hover {
+    outline: solid 2px white;    
+}
+
+.container-link a:first-child i {
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 1000px) {    
+    .modal {
+        width: 90%;
+        max-width: 700px;        
+        padding: 50px 35px 35px;
+    }
+
+    .modal .container-img {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .modal .container-descrip {
+        row-gap: 15px;
+        width: calc(100% - 280px);
+    }
+    
+    .modal .container-descrip h4 {
+        font-size: 20px;
+    }
+    
+    .modal .container-descrip p {
+        font-size: 14px;
+        line-height: 1.2rem;
+    }
+    
+    .container-language {
+        width: 220px;
+    }
+    
+    .container-link {    
+        width: calc(100% - 280px);
+    }
+}
+
+@media screen and (max-width: 700px) {    
+    .modal {
+        row-gap: 15px;     
+        padding: 25px 15px 15px;
+    }
+
+    .modal .container {
+        row-gap: 15px;
+        flex-direction: column;
+    }
+
+    .modal .container-img {
+        width: 200px;
+        height: 200px;
+        margin-right: 5px;
+    }
+    
+    .modal .container-descrip {
+        row-gap: 15px;
+        width: 100%;
+    }
+    
+    .modal .container-descrip h4 {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .modal .container-descrip p {
+        height: 200px;
+        
+        overflow-y: scroll;
+        padding-right: 5px;
+    }
+
+    .container-language-link {
+        flex-direction: column;
+        padding: 10px 0;
+        row-gap: 25px;
+    }
+    
+    .container-language {
+        width: 100%;
+    }
+    
+    .container-link {    
+        width: 100%;
+    }
+
+    .container-link a {
+        height: 30px;
+        padding: 0 15px;    
+        column-gap: 10px;                
+    }
+    
+    .container-link i {
+        font-size: .9rem;
+    }
+    
+    .container-link a:hover {
+        outline: solid 2px white;    
+    }
+    
+    .container-link a:first-child i {
+        font-size: 1.1rem;
+    }
+}
